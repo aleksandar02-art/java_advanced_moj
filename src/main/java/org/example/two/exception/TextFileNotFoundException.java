@@ -8,4 +8,8 @@ public class TextFileNotFoundException extends FileNotFoundException {
         super("TEXT:%s".formatted(message));
         System.out.println("Nedostaje tekstualni fajl");
     }
+
+    public void readFile(String file) {
+
+    }
 }
