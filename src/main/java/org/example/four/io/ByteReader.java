@@ -6,13 +6,16 @@ import java.io.IOException;
 
 // ByteReader obj = new ByteReader()
 // ibj.read();
-public class ByteReader implements Reader {
+ class ByteReader implements Reader {
     @Override
     public String read(String path) throws ReaderException {
         try (FileInputStream fis = new FileInputStream(path)){
             StringBuilder stringBuilder = new StringBuilder();
-
-            return "";
+            int b;
+            while((b = fis.read()) != -1){
+                stringBuilder.append((char) b);
+            }
+            return stringBuilder.toString();
         } catch (IOException e) {
             throw new ReaderException(e.getMessage());
         }
