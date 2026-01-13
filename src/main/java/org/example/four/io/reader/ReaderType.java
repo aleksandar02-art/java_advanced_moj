@@ -1,4 +1,4 @@
-package org.example.four.io;
+package org.example.four.io.reader;
 
 public enum ReaderType {
     BYTE("Byte Reader", "Cita byte po byte"),

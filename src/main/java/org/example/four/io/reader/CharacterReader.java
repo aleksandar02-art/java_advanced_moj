@@ -1,4 +1,4 @@
-package org.example.four.io;
+package org.example.four.io.reader;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,7 +1,6 @@
-package org.example.four.io;
+package org.example.four.io.reader;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 // ByteReader obj = new ByteReader()

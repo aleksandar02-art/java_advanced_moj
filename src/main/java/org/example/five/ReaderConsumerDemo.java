@@ -1,18 +1,18 @@
-package org.example.four;
+package org.example.five;
 
 import org.example.four.io.reader.Reader;
 import org.example.four.io.reader.ReaderException;
 import org.example.four.io.reader.ReaderFactory;
 import org.example.four.io.reader.ReaderType;
 
-public class ConsumerDemo {
+public class ReaderConsumerDemo {
     public static void main(String[] args) {
-
-        Reader reader = ReaderFactory.createReader(ReaderType.LINE);
+        ReaderType readerType = ReaderType.LINE;
+        Reader lineReader = ReaderFactory.createReader(readerType);
         try {
-            String fileContent = reader.read("data.txt");
-            System.out.println(fileContent);
-        } catch (ReaderException e) {
+            String  result = lineReader.read("data.txt");
+            System.out.println(result);
+        }catch (ReaderException e){
             System.err.println(e.getMessage());
         }
     }

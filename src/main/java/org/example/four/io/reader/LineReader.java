@@ -1,12 +1,10 @@
-package org.example.four.io;
+package org.example.four.io.reader;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.Buffer;
 
- class LineReader implements Reader{
+class LineReader implements Reader{
     @Override
     public String read(String path) throws ReaderException {
         try {
